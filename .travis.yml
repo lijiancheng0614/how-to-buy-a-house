@@ -11,10 +11,13 @@ install:
 script:
   - make html
 
+before_deploy:
+  - touch build/html/.nojekyll
+
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  cleanup: true
+  token: $GITHUB_TOKEN
   local_dir: build/html/
   verbose: true
   on:
