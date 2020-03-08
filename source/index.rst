@@ -4,16 +4,12 @@
    contain the root `toctree` directive.
 
 如何买房
-==============================================
+========
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-目录
-==================
-
-* :ref:`genindex`
-* :ref:`search`
+   house/index.rst
+   pick/index.rst
+   inspect/index.rst
+   buy/index.rst
