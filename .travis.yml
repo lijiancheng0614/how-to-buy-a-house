@@ -16,7 +16,7 @@ before_deploy:
 
 deploy:
   provider: pages
-  cleanup: true
+  skip_cleanup: true
   token: $GITHUB_TOKEN
   local_dir: build/html/
   verbose: true
